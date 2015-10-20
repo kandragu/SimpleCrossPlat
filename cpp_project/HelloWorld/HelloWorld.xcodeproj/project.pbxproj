@@ -11,6 +11,16 @@
 		362BF6031BD4DA7600AC0B7D /* hello_world_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 362BF6011BD4DA7600AC0B7D /* hello_world_impl.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		364199171BD5F85500C87124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364199131BD5F85400C87124 /* HelloWorld.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 364198F91BD5F85300C87124;
+			remoteInfo = HelloWorld;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		362BF5F41BD4D9AA00AC0B7D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -29,6 +39,7 @@
 		362BF6001BD4DA5B00AC0B7D /* hello_world.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = hello_world.hpp; path = "../../../generated-src/cpp/hello_world.hpp"; sourceTree = "<group>"; };
 		362BF6011BD4DA7600AC0B7D /* hello_world_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hello_world_impl.cpp; path = ../../../src/hello_world_impl.cpp; sourceTree = "<group>"; };
 		362BF6021BD4DA7600AC0B7D /* hello_world_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = hello_world_impl.hpp; path = ../../../src/hello_world_impl.hpp; sourceTree = "<group>"; };
+		364199131BD5F85400C87124 /* HelloWorld.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloWorld.xcodeproj; path = HelloWorld/HelloWorld.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +72,21 @@
 		362BF5F81BD4D9AA00AC0B7D /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				364199131BD5F85400C87124 /* HelloWorld.xcodeproj */,
 				362BF6011BD4DA7600AC0B7D /* hello_world_impl.cpp */,
 				362BF6021BD4DA7600AC0B7D /* hello_world_impl.hpp */,
 				362BF6001BD4DA5B00AC0B7D /* hello_world.hpp */,
 				362BF5F91BD4D9AA00AC0B7D /* main.cpp */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		364199141BD5F85400C87124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364199181BD5F85500C87124 /* HelloWorld.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +133,28 @@
 			mainGroup = 362BF5ED1BD4D9AA00AC0B7D;
 			productRefGroup = 362BF5F71BD4D9AA00AC0B7D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 364199141BD5F85400C87124 /* Products */;
+					ProjectRef = 364199131BD5F85400C87124 /* HelloWorld.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				362BF5F51BD4D9AA00AC0B7D /* HelloWorld */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		364199181BD5F85500C87124 /* HelloWorld.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloWorld.app;
+			remoteRef = 364199171BD5F85500C87124 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		362BF5F21BD4D9AA00AC0B7D /* Sources */ = {
@@ -243,6 +279,7 @@
 				362BF5FF1BD4D9AA00AC0B7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
